@@ -30,11 +30,11 @@ spec:
                 name: app-secret
                 key: db-pass
       nodeSelector:
-        zone: us-east-2b
+        zone: us-east-2a
       volumes:
         - name: vpro-db-data
           awsElasticBlockStore:
-            volumeID: vol-0a906d43628c540e2
+            volumeID: vol-0318cb6eb79712e4b
             fsType: ext4
       
       initContainers:
